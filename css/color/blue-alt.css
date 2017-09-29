@@ -1,0 +1,54 @@
+/*-----------------------------------------------------------------
+	#Text
+------------------------------------------------------------------- */
+
+	nav ul li.active a,
+	nav ul li a:hover,
+	.caption-one h1,
+	.caption-one p,
+	.caption-two p,
+	.caption-three h2,
+	.caption-three p,
+	.sequence-pagination li,
+	.folio h3,
+	.box:hover h4,
+	.overlay .caption i,
+	.contactform label,
+	.contactform span,
+	.contact-details span,
+	.copyright p a,
+	.color-strong,
+	.quote h2,
+	#ad h2,
+	.twitter-wrap a { color: #038ca9; }
+
+	.sequence-pagination li.current,
+	.sequence-pagination li:hover,
+	.about:hover,
+	.services-box:hover,
+	#filter li a:hover,
+	#filter li.active a,
+	.bgcolor,
+	.table-name h3.promo,
+	.table-button:hover,
+	.color,
+	.port:hover { background-color: #038ca9; }
+
+	::-moz-selection { background-color: #038ca9; }
+	::selection { background-color: #038ca9; }
+
+	.sequence-pagination li,
+	.folio h3 { border-color: #038ca9; }
+
+/*-----------------------------------------------------------------
+	#Icons
+------------------------------------------------------------------- */
+
+	.social ul li a:hover { background-color: #038ca9; }
+
+/*-----------------------------------------------------------------
+	#Flex Slider
+------------------------------------------------------------------- */
+
+	.flex-control-paging li a:hover,
+	.flex-control-paging li a.flex-active  { background: #038ca9; }

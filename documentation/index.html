@@ -1,0 +1,539 @@
+<html>
+<head>
+	<title>Natura Template Documentation</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/shCore.css">
+	<link rel="stylesheet" href="css/shThemeDefault.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushCss.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+    		$(".menu ul li a").click(function() {
+	        $("html, body").animate({
+	            scrollTop: $($(this).attr("href")).offset().top + "px"
+	        	}, {
+	            duration: 600,
+	            easing: "swing"
+	        	});
+	        return false;
+	    	});
+		});
+
+	</script>
+</head>
+<body>
+
+	<div class="menu">
+		<nav>
+			<ul>
+				<li>Customization</li>
+				<li><a href="#home">- Home</a></li>
+				<li><a href="#about">- About</a></li>
+				<li><a href="#clients">- Clients</a></li>
+				<li><a href="#team">- Team</a></li>
+				<li><a href="#video">- Video</a></li>
+				<li><a href="#services">- Services</a></li>
+				<li><a href="#quote">- Quote</a></li>
+				<li><a href="#portfolio">- Portfolio</a></li>
+				<li><a href="#contact">- Contact</a></li>
+			</ul>
+			<ul>
+				<li><a href="#icons">- Social Icons</a></li>
+				<li><a href="#colors">- Colors</a></li>
+				<li><a href="#twitter">- Twitter</a></li>
+				<li><a href="#patterns">- Patterns</a></li>
+			</ul>
+			<ul>
+				<li><a href="#credits">- Credits</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="content">
+		<div id="content-wraper">
+
+		<h1>Natura Template Documentation</h1>
+	
+	<div class="wrap">
+		<p>Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email me at: admin@dekystudio.com
+	</div>
+
+	<h2>Customization</h2>
+
+	<div id="home" class="wrap">
+		<h3>Home</h3>
+		<span class="subtitle">Header & Logo</span>
+		<p>You can change logo and site navigation in your header.</p>
+		<pre class="brush: xml">
+			<!-- Header -->
+			<header>
+				<div class="container">
+					<div id="logo"><a href=""><img src="images/logo.png" alt=""></a></div>
+					<nav>
+						<ul id="nav">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="shortcodes.html" class="other">Shortcodes</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<!-- END Header --></pre>
+
+		<span class="subtitle">Slider</span>
+		<p>Natura use <a href="http://www.sequencejs.com">Sequence</a> slider to display slides on the home screen. Sequence use CSS3 animations to display your slides. If there is no support for CSS3 Sequence use jQuery to display slides.</p>
+		<pre class="brush: xml">
+			<!-- Home -->
+			<div id="home">
+				<div id="sequence">
+					<ul class="sequence-canvas">
+
+						<li class="animate-in">
+							<div class="slide1">
+								<div class="pattern">
+									<div class="container home">
+										<div class="sixteen columns caption-one">
+											<h1>Natura</h1><br>
+											<p>One Page Responsive Parallax Template</p>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</li>
+
+						<li>
+							<div class="slide2">
+								<div class="pattern">
+									<div class="container home">
+										<div class="sixteen columns caption-two">
+											<p>5 predefined colors</p><br>
+											<p>100 social icons</p><br>
+											<p>100 patterns</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</li>
+
+						<li>
+							<div class="slide3">
+								<div class="pattern">
+									<div class="container home">
+										<div class="sixteen columns caption-three">
+											<h2>Responsive</h2><br>
+											<p>It Looks Great On Mobile</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+					<ul class="sequence-pagination">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+
+			</div><!-- #home -->
+			<!-- END Home --></pre>		
+	</div>
+		
+	<div id="about" class="wrap">
+		<h3>About</h3>
+		<span class="subtitle">Slider images:</span>
+		<p>This template use Flex Slider to display slider images on about page. If you want to change them, simply upload your images in images/flexslider folder and link to them in index.html file. If you want to add more slides simply add more "li" tags. You can find more about Flex Slider customization on <a href="http://www.woothemes.com/flexslider/">their site</a>.</p>
+			<pre class="brush: xml">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="images/flexslider/slide1.jpg" alt="" />
+						
+					</li>
+					<li>
+						<img src="images/flexslider/slide2.jpg" alt="" />
+						
+					</li>
+					<li>
+						<img src="images/flexslider/slide3.jpg" alt="" />
+						
+					</li>
+				</ul>
+			</div><!-- flexslider --></pre>
+		<span class="subtitle">Icons</span>
+		<p>Natura use <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> to display your about icons. If you want to use different icons go to <a href="http://fortawesome.github.io/Font-Awesome/icons/">their website</a> and chose ones that you like.</p>
+		<pre class="brush: xml">
+			<div class="one-third column about">
+				<i class="fa fa-lightbulb-o fa-4x"></i>
+				<h4>YOUR IDEA</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis laoreet libero ut rhoncus.</p>
+			</div></pre>
+	</div>
+
+	<div id="clients" class="wrap">
+		<h3>Clients</h3>
+		<span class="subtitle">Client images</span>
+		<p>In this section you can change your clients images and link to their sites.</p>
+			<pre class="brush: xml">
+			<div class="four columns clients"><a href=""><img class="scale-with-grid" src="images/clients/themeforest.png" alt="" /></a></div></pre>
+	</div>
+
+
+	<div id="team" class="wrap">
+		<h3>Team</h3>
+		<span class="subtitle">Team images</span>
+		<p>Upload your team images into images folder and link to them in index.html file. Images with the class "top" should be grayscale. Crop your images to 380px x 254px for the best color hover effect.</p>
+			<pre class="brush: xml">
+			<img src="images/1_2.jpg" alt="">
+            <img class="top" src="images/1.jpg" alt=""></pre>
+	</div>
+
+	<div id="video" class="wrap">
+		<h3>Video</h3>
+		<span class="subtitle">Video settigns</span>
+		<p>In this section you can display your Vimeo or You Tube videos. Copy your Viemo or You Tube code inside "video-wrap" div. This will make your video responsive.</p>
+			<pre class="brush: xml">
+			<div class="video-wrap">
+				<iframe src="//player.vimeo.com/video/22439234" allowfullscreen></iframe>
+			</div></pre>
+	</div>
+
+	<div id="services" class="wrap">
+		<h3>Services</h3>
+		<span class="subtitle">Your services</span>
+		<p>In this section you can display services that you offer. This section use Font Awesome to display your service icons. If you want to change them go to <a href="http://fortawesome.github.io/Font-Awesome/icons/">their website</a> and chose ones that you like.</p>
+			<pre class="brush: xml">
+			<div class="one-third column">
+				<div class="box">
+					<i class="icon-search"></i>
+					<h4>MARKET RESEARCH</h4>
+					<p>Consectetur adipiscing elit aeneane lorem lipsum, condimentum ultrices consequat eu, vehicula mauris lipsum adipiscing lipsum aenean orci lorem Asequat. Lorem ipsum dolor lorem sit amet, consectetur adipiscing dolor.</p>
+				</div>
+			</div></pre>
+	</div>
+
+	<div id="quote" class="wrap">
+		<h3>Quote</h3>
+		<span class="subtitle">Quote rotation:</span>
+		<p>If you want to change quote speed rotation go to custom.js find "// quote rotator" and change the spped of rotation in miliseconds. Default is 6000ms (6s).</p>
+	</div>
+
+	<div id="portfolio" class="wrap">
+		<h3>Portfolio</h3>
+		<span class="subtitle">Portfolio images</span>
+		<p>In this section you can display some of your work. Go to images/portfolio/thumbs/ and upload thumbs that you want to be displayed. Natura use <a href="http://razorjack.net/quicksand/">Quicksand</a> to arange different types of your work. class="group1" stands for pictures class="video" for videos class="iframe" for iframed content.</p>
+			<pre class="brush: xml">
+			<li class="four columns" data-id="id-1" data-type="pictures">
+				<div class="port">
+					<div class="overlay">
+						<a class="group1" href="images/portfolio/1.jpg" title="Jump">
+							<div class="caption"><i class="fa fa-search-plus"></i></div>
+							<img class="scale-with-grid" src="images/portfolio/thumbs/1.jpg" alt="">
+						</a>
+					</div>
+					<h5>Jump</h5>
+					<p>Short description of jump</p>
+				</div>
+			</li></pre>
+	</div>
+
+	<div id="contact" class="wrap">
+		<h3>Contact</h3>
+		<span class="subtitle">Update contact form with your email address</span>
+		<p>Open send.php file and update "$adminemail" with your email address.</p>
+		<span class="subtitle">Google map:</span>
+		<p>Google map is iframed. If you want to change it, go to google maps, enter your location, click on link button and pick up the iframed version of the link. Update your google map by replacing only the src path inside index.html file. Leave id="map" inside iframe so map could be responsive.</p>
+			<pre class="brush: xml">
+			<iframe src="https://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=40.707909,-74.008514&amp;spn=0.015908,0.042272&amp;t=m&amp;z=15&amp;output=embed" id="map"></iframe></pre>
+	</div>
+
+
+	<div id="icons" class="wrap">
+		<h3>Social Icons</h3>
+		<p>Natura comes with 100 social icons as one (sprite) file. This prevent your server from having several http requests. Instead it would have only one. All icons are 24px X 24px and they are displayed as background images. To display them properly you need to change backround positions. Below is the full list of background positions for each site.</p>
+			<pre class="brush: css">
+			facebook 			0 0
+			twitter 		-24px 0
+			linkedin 		-48px 0
+			vimeo 			-72px 0
+			youtube 	    -96px 0
+			tumbrl 		   -120px 0
+			skype 		   -144px 0
+			500px 		   -168px 0
+			about me 	   -192px 0
+			add this 	   -216px 0
+			blip 		   -240px 0
+			bing 		   -264px 0
+			behance		   -288px 0
+			bebo	 	   -312px 0
+			apple      	   -336px 0
+			google +	   -360px 0
+			dribbble	   -384px 0
+			app store	   -408px 0
+			aol		 	   -432px 0
+			amazon	 	   -456px 0
+			daytum 		   -480px 0
+			coroflot	   -504px 0
+			drupal		   -528px 0
+			digg alt	   -552px 0
+			digg      	   -576px 0
+			deviant art	   -600px 0
+			designfloat	   -624px 0
+			design bump	   -648px 0
+			delicious 	   -672px 0
+			blogger	 	   -696px 0
+			friendsfeed	   -720px 0
+			foursquare	   -744px 0
+			forrst		   -768px 0
+			foodspotting   -792px 0
+			flickr	 	   -816px 0
+			feed burner	   -840px 0
+			etsy		   -864px 0
+			ember app 	   -888px 0
+			email		   -912px 0
+			ebay		   -936px 0
+			google talk	   -960px 0
+			google buzz	   -984px 0
+			github		  -1008px 0
+			gdgt	 	  -1032px 0
+			friendstar	  -1056px 0
+			hyves		  -1080px 0
+			hart	 	  -1104px 0
+			grooveshark	  -1128px 0
+			gowalla pin	  -1152px 0
+			gowalla		  -1176px 0
+			identica	  -1200px 0
+			icq			  -1224px 0
+			icondock 	  -1248px 0
+			mobileme	  -1272px 0
+			mixx		  -1296px 0
+			metacafe 	  -1320px 0
+			meetup		  -1344px 0
+			last.fm		  -1368px 0
+			itune		  -1392px 0
+			imessage	  -1416px 0
+			posterous	  -1440px 0
+			podcast	 	  -1464px 0
+			pinterest	  -1488px 0
+			picasa		  -1515px 0
+			photobucket	  -1536px 0
+			paypal		  -1560px 0
+			newsvine	  -1584px 0
+			myspace		  -1608px 0
+			msn			  -1632px 0
+			mr wong		  -1656px 0
+			smugmug	 	  -1680px 0
+			slideshare	  -1704px 0
+			slashdot	  -1728px 0
+			share this 	  -1752px 0
+			scribd		  -1776px 0
+			rss 		  -1800px 0
+			retweet		  -1824px 0
+			reddit		  -1848px 0
+			quora 		  -1872px 0
+			qik 	 	  -1896px 0
+			squidoo		  -1920px 0
+			spotify		  -1944px 0
+			sound cloud	  -1968px 0
+			w3			  -1992px 0
+			virb		  -2016px 0
+			viddler		  -2040px 0
+			technorati	  -2064px 0
+			stumbleupon	  -2088px 0
+			star	 	  -2112px 0
+			stackoverflow -2136px 0
+			yahoo		  -2160px 0
+			xing	 	  -2184px 0
+			wordpress	  -2208px 0
+			windows		  -2232px 0
+			wikipedia	  -2256px 0
+			yelp	 	  -2280px 0
+			yahoo buzz	  -2304px 0
+			dropbox	      -2328px 0
+			kickstarter	  -2352px 0
+			instagram     -2376px 0</pre>
+
+			<p>You also get the 32px X 32px sprite file if you want to display larger icons. Fore these icons use the following dimensions.</p>
+
+			<pre class="brush: css">
+			facebook 			0 0
+			twitter 		-32px 0
+			linkedin 		-64px 0
+			vimeo 			-96px 0
+			youtube 	   -128px 0
+			tumbrl 		   -160px 0
+			skype 		   -192px 0
+			500px 		   -224px 0
+			about me 	   -256px 0
+			add this 	   -288px 0
+			blip 		   -320px 0
+			bing 		   -352px 0
+			behance		   -384px 0
+			bebo	 	   -416px 0
+			apple      	   -448px 0
+			google +	   -480px 0
+			dribbble	   -512px 0
+			app store	   -544px 0
+			aol		 	   -576px 0
+			amazon	 	   -608px 0
+			daytum 		   -640px 0
+			coroflot	   -672px 0
+			drupal		   -704px 0
+			digg alt	   -736px 0
+			digg      	   -768px 0
+			deviant art	   -800px 0
+			designfloat	   -832px 0
+			design bump	   -864px 0
+			delicious 	   -896px 0
+			blogger	 	   -928px 0
+			friendsfeed	   -960px 0
+			foursquare	   -992px 0
+			forrst		  -1024px 0
+			foodspotting  -1056px 0
+			flickr	 	  -1088px 0
+			feed burner	  -1120px 0
+			etsy		  -1152px 0
+			ember app 	  -1184px 0
+			email		  -1216px 0
+			ebay		  -1248px 0
+			google talk	  -1280px 0
+			google buzz	  -1312px 0
+			github		  -1344px 0
+			gdgt	 	  -1376px 0
+			friendstar	  -1408px 0
+			hyves		  -1440px 0
+			hart	 	  -1474px 0
+			grooveshark	  -1504px 0
+			gowalla pin	  -1536px 0
+			gowalla		  -1568px 0
+			identica	  -1600px 0
+			icq			  -1632px 0
+			icondock 	  -1664px 0
+			mobileme	  -1696px 0
+			mixx		  -1728px 0
+			metacafe 	  -1760px 0
+			meetup		  -1792px 0
+			last.fm		  -1824px 0
+			itune		  -1856px 0
+			imessage	  -1888px 0
+			posterous	  -1920px 0
+			podcast	 	  -1952px 0
+			pinterest	  -1984px 0
+			picasa		  -2016px 0
+			photobucket	  -2048px 0
+			paypal		  -2080px 0
+			newsvine	  -2112px 0
+			myspace		  -2144px 0
+			msn			  -2176px 0
+			mr wong		  -2208px 0
+			smugmug	 	  -2240px 0
+			slideshare	  -2272px 0
+			slashdot	  -2304px 0
+			share this 	  -2336px 0
+			scribd		  -2368px 0
+			rss 		  -2400px 0
+			retweet		  -2432px 0
+			reddit		  -2464px 0
+			quora 		  -2496px 0
+			qik 	 	  -2528px 0
+			squidoo		  -2560px 0
+			spotify		  -2592px 0
+			sound cloud	  -2624px 0
+			w3			  -2656px 0
+			virb		  -2688px 0
+			viddler		  -2720px 0
+			technorati	  -2752px 0
+			stumbleupon	  -2784px 0
+			star	 	  -2816px 0
+			stackoverflow -2848px 0
+			yahoo		  -2880px 0
+			xing	 	  -2912px 0
+			wordpress	  -2944px 0
+			windows		  -2976px 0
+			wikipedia	  -3008px 0
+			yelp	 	  -3040px 0
+			yahoo buzz	  -3072px 0
+			dropbox	      -3104px 0
+			kickstarter	  -3136px 0
+			instagram     -3168px 0</pre>
+	</div>
+
+
+	<div id="colors" class="wrap">
+		<h3>Colors</h3>
+		<p>Natura comes with 10 predefined colors. If you want to change template color, simply update stylesheet inside index.html file to point to your favorite color.</p>
+		<pre class="brush: xml">
+			<link rel="stylesheet" href="css/color/yellow.css"></pre>
+	</div>
+
+
+	<div id="twitter" class="wrap">
+		<h3>Twitter</h3>
+		<p>Twitter feed use <a href="https://github.com/seaofclouds/tweet">Seaofclouds</a> with <a href="https://github.com/StanScates/Tweet.js-Mod">Tweet.js-Mod</a> in order to display tweets. Since Twitter upgraded their API to 1.1 you will need to create apication to get your consumer key, consumer secret, user token and user secret. <strong><a href="http://www.youtube.com/watch?v=GQaPt-gQVRI">Here is a quick video</a></strong> of how to create your aplication. Once you get your API keys go to js/twetter/index.php file and update the file with your keys.</p>
+	</div>
+
+
+	<div id="patterns" class="wrap">
+		<h3>Patterns</h3>
+		<p>This tamplate comes with 10 diffrerent types of patterns with 10 different opacities. Look inside images/patterns folder. First part of file name is pattern type. Second part is pattern opacity. 10 stands for 10% opacity and 100 stands for 100% (full fill) color. Bellow is the example of patterns with 50% opacity</p>
+		pattern 1
+		<div class="pattern1"></div>
+		pattern 2
+		<div class="pattern2"></div>
+		pattern 3
+		<div class="pattern3"></div>
+		pattern 4
+		<div class="pattern4"></div>
+		pattern 5
+		<div class="pattern5"></div>
+		pattern 6
+		<div class="pattern6"></div>
+		pattern 7
+		<div class="pattern7"></div>
+		pattern 8
+		<div class="pattern8"></div>
+		pattern 9
+		<div class="pattern9"></div>
+		pattern 10
+		<div class="pattern10"></div>
+	</div>
+
+
+	<div id="credits" class="wrap">
+		<h3>Credits</h3>
+		<span class="subtitle">Natura was created with the help of:</span>
+		<p>
+			<a href="http://getskeleton.com">Skeleton</a><br>
+			<a href="http://www.sequencejs.com/">Sequence</a><br>
+			<a href="http://areaaperta.com/nicescroll/">Nicescroll</a><br>
+			<a href="http://coryschires.com/jquery-quote-rotator-plugin/">Quote Rotator</a><br>
+			<a href="http://razorjack.net/quicksand/">Quicksand</a><br>
+			<a href="http://www.ianlunn.co.uk/plugins/jquery-parallax/">jQuery Parallax</a><br>
+			<a href="http://www.woothemes.com/flexslider/">Flex Slider</a><br>
+			<a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a><br>
+			<a href="http://www.google.com/fonts/">Google Web Font</a><br>
+			<a href="http://www.jacklmoore.com/colorbox/">Colorbox</a><br>
+			<a href="https://github.com/lukaszfiszer/selectnav.js">SelectNav</a>
+		</p>
+	</div>
+
+		</div><!-- content-wraper -->
+	</div><!-- content -->
+
+	<script type="text/javascript">
+    	SyntaxHighlighter.all()
+	</script>
+
+</body>
+</html>
